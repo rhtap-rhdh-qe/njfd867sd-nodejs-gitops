@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: njfd867sd-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: njfd867sd-nodejs 
+  name: njfd867sd-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: njfd867sd-nodejs 
